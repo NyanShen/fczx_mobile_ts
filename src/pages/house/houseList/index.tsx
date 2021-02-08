@@ -1,7 +1,10 @@
-import { useState } from 'react'
-import ZoomImage from '../../../components/zoomImage'
+import { useEffect, useState } from 'react'
 
+import api from '@/services/api'
+import app from '@/services/request'
+import ZoomImage from '@/components/zoomImage'
 import './index.scss'
+
 const HouseList = () => {
     const [houseData, setHouseData] = useState([
         {
@@ -9,6 +12,22 @@ const HouseList = () => {
         }
     ])
 
+    useEffect(() => {
+        fetchHouseList()
+    }, [])
+
+    const fetchHouseList = () => {
+        app.request({
+            url: app.testApiUrl(api.getHouseList),
+            data: {
+                page: 1,
+                limit: 10
+            },
+            success: (result: any) => {
+                console.log(result)
+            }
+        })
+    }
     return (
         <>
             <div className="house-list">

@@ -44,6 +44,7 @@
     "jest-circus": "26.6.0",
     "jest-resolve": "26.6.0",
     "jest-watch-typeahead": "0.6.1",
+    "jquery": "^3.5.1",
     "lib-flexible": "^0.3.2",
     "mini-css-extract-plugin": "0.11.3",
     "node-sass": "^5.0.0",
@@ -157,6 +158,8 @@
     ]
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.5",
     "sass-resources-loader": "^2.1.1"
-  }
+  },
+  "proxy": "http://127.0.0.1:12306"
 }
