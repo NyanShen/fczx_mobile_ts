@@ -21,9 +21,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-        "@pages/*": ["src/pages/*"],
+        "@/*": ["src/*"],
         "@assets/*": ["src/assets/*"], // css, html中需要 `~@assets/*`
-        "@components/*": ["src/components/*"],
     }
   },
   "include": [

@@ -1,5 +1,5 @@
 import './App.css';
-import HouseList from './pages/house/houseList';
+import HouseList from '@/pages/house/houseList';
 
 function App() {
   return (
