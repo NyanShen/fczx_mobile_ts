@@ -18,7 +18,7 @@ const HouseList = () => {
 
     const fetchHouseList = () => {
         app.request({
-            url: app.testApiUrl(api.getHouseList),
+            url: app.areaApiUrl(api.getHouseList),
             data: {
                 page: 1,
                 limit: 10

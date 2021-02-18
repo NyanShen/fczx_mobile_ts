@@ -27,11 +27,15 @@ app.getUrlParam = function (str: string) {
 }
 
 app.apiUrl = (uri: string) => {
-    return `${agreement}api${topDomain}${uri}`
+    // return `${agreement}api${topDomain}${uri}`
+    
+    return `http://www.loubei.com/api${uri}`
 }
 
 app.areaApiUrl = (uri: string) => {
-    return `${agreement}areaapi${topDomain}${uri}`
+    // return `${agreement}areaapi${topDomain}${uri}`
+    
+    return `http://www.loubei.com/areaapi${uri}`
 }
 
 app.testApiUrl = (uri: string) => {
